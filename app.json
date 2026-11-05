@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Music bb",
+    "slug": "music-bb",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.musicbb.app",
+      "deploymentTarget": "15.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Music bb Selfie Sing mode requires camera access to display your live video feed over lyrics."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Music bb to access your camera for Selfie Sing mode."
+        }
+      ]
+    ]
+  }
+}
