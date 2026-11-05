@@ -2,7 +2,7 @@
   "expo": {
     "name": "Music bb",
     "slug": "music-bb",
-    "version": "1.0.0",
+    "version": "27.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -16,6 +16,9 @@
       "bundleIdentifier": "com.musicbb.app",
       "deploymentTarget": "15.0",
       "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ],
         "NSCameraUsageDescription": "Music bb Selfie Sing mode requires camera access to display your live video feed over lyrics."
       }
     },
@@ -23,7 +26,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Music bb to access your camera for Selfie Sing mode."
+          "cameraPermission": "Allow Music bb to access camera for Selfie Sing mode."
         }
       ]
     ]
